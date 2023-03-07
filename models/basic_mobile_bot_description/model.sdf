@@ -126,7 +126,8 @@
           <horizontal>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>1e-2</stddev>
+              <!-- <stddev>1e-2</stddev> -->
+              <stddev>1</stddev>
             </noise>
           </horizontal>
           <vertical>
