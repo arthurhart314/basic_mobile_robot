@@ -108,6 +108,7 @@ def generate_launch_description():
     executable = 'navsat_transform_node',
     name       = 'navsat_transform',
     parameters = [navsat_file_path],
+    remappings=  [('imu', 'imu/data')],
     arguments  = ['--ros-args', '--log-level', 'warn'])
 
 
