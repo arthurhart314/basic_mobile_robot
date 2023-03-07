@@ -136,25 +136,25 @@ def generate_launch_description():
   ld = LaunchDescription()
 
   # Declare the launch options
-  #ld.add_action(declare_model_path_cmd)
-  #ld.add_action(declare_rviz_config_file_cmd)
-  #ld.add_action(declare_simulator_cmd)
-  #ld.add_action(declare_use_robot_state_pub_cmd)  
-  #ld.add_action(declare_use_rviz_cmd) 
-  #ld.add_action(declare_use_sim_time_cmd)
-  #ld.add_action(declare_use_simulator_cmd)
-  #ld.add_action(declare_world_cmd)
+  ld.add_action(declare_model_path_cmd)
+  ld.add_action(declare_rviz_config_file_cmd)
+  ld.add_action(declare_simulator_cmd)
+  ld.add_action(declare_use_robot_state_pub_cmd)  
+  ld.add_action(declare_use_rviz_cmd) 
+  ld.add_action(declare_use_sim_time_cmd)
+  ld.add_action(declare_use_simulator_cmd)
+  ld.add_action(declare_world_cmd)
 
   # Add any actions
-  #ld.add_action(start_gazebo_server_cmd)
-  #ld.add_action(start_gazebo_client_cmd)
+  ld.add_action(start_gazebo_server_cmd)
+  ld.add_action(start_gazebo_client_cmd)
 
-  #ld.add_action(start_robot_localization_cmd)                                ## EKF
+  ld.add_action(start_robot_localization_cmd)                                ## EKF
 
   print ("Launching navsat\n\n\n -------------------\n-----------------------")
-  #ld.add_action(navsat_transform_node)                                     ## NAVSAT
+  ld.add_action(navsat_transform_node)                                     ## NAVSAT
 
-  #ld.add_action(start_robot_state_publisher_cmd)
-  #ld.add_action(start_rviz_cmd)
+  ld.add_action(start_robot_state_publisher_cmd)
+  ld.add_action(start_rviz_cmd)
 
   return ld

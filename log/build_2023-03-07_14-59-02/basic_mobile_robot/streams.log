@@ -1,0 +1,85 @@
+[0.010s] Invoking command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/artl2sch/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot
+[0.043s] -- The C compiler identification is GNU 11.3.0
+[0.078s] -- The CXX compiler identification is GNU 11.3.0
+[0.083s] -- Detecting C compiler ABI info
+[0.131s] -- Detecting C compiler ABI info - done
+[0.136s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.136s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.192s] -- Detecting CXX compiler ABI info - done
+[0.198s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.199s] -- Detecting CXX compile features
+[0.199s] -- Detecting CXX compile features - done
+[0.201s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.316s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.377s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.431s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.435s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.435s] -- Configured cppcheck include dirs: 
+[0.435s] -- Configured cppcheck exclude dirs and/or files: 
+[0.439s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.439s] -- Configured cpplint exclude dirs and/or files: 
+[0.440s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.442s] -- Added test 'lint_cmake' to check CMake code style
+[0.443s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.447s] -- Added test 'uncrustify' to check C / C++ code style
+[0.447s] -- Configured uncrustify additional arguments: 
+[0.448s] -- Added test 'xmllint' to check XML markup files
+[0.449s] -- Configuring done
+[0.450s] -- Generating done
+[0.451s] -- Build files have been written to: /home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot
+[0.454s] Invoked command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/artl2sch/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot
+[0.455s] Invoking command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot -- -j12 -l12
+[0.482s] Invoked command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot -- -j12 -l12
+[0.505s] Invoking command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot
+[0.510s] -- Install configuration: ""
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/config
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/config/navsat_transform_config.yaml
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/launch
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v3.launch.py
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/maps
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+[0.510s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+[0.511s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+[0.511s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+[0.511s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+[0.511s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+[0.511s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/arm_base.stl
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wheel.stl
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/robot_base.stl
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/elbow.stl
+[0.512s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/bicep.stl
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wrist.stl
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.config
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.sdf
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/params
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/src
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world
+[0.513s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake
+[0.514s] -- Installing: /home/artl2sch/dev_ws/src/basic_mobile_robot/install/basic_mobile_robot/share/basic_mobile_robot/package.xml
+[0.516s] Invoked command in '/home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/artl2sch/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/artl2sch/dev_ws/src/basic_mobile_robot/build/basic_mobile_robot
