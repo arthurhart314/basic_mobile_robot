@@ -48,19 +48,19 @@
           <x>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-3</stddev>
+              <stddev>2e-9</stddev> <!--  2e-3    -->
             </noise>
           </x>
           <y>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-3</stddev>
+              <stddev>2e-9</stddev><!--  2e-3    -->
             </noise>
           </y>
           <z>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-3</stddev>
+              <stddev>2e-9</stddev><!--  2e-3    -->
             </noise>
           </z>
         </orientation>
@@ -68,19 +68,19 @@
           <x>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-4</stddev>
+              <stddev>2e-9</stddev><!--  2e-4    -->
             </noise>
           </x>
           <y>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-4</stddev>
+              <stddev>2e-9</stddev><!--  2e-4    -->
             </noise>
           </y>
           <z>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>2e-4</stddev>
+              <stddev>2e-9</stddev><!--  2e-4    -->
             </noise>
           </z>
         </angular_velocity>
@@ -88,19 +88,19 @@
           <x>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
+              <stddev>1.7e-9</stddev><!--  1.7e-2    -->
             </noise>
           </x>
           <y>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
+              <stddev>1.7e-9</stddev><!--  1.7e-2    -->
             </noise>
           </y>
           <z>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
+              <stddev>1.7e-9</stddev><!--  1.7e-2    -->
             </noise>
           </z>
         </linear_acceleration>
@@ -126,14 +126,14 @@
           <horizontal>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <!-- <stddev>1e-2</stddev> -->
-              <stddev>1</stddev>
+              <!-- <stddev>1e-2</stddev> ************************************************************************************** -->
+              <stddev>5</stddev>
             </noise>
           </horizontal>
           <vertical>
             <noise type="gaussian">
               <mean>0.0</mean>
-              <stddev>1</stddev>
+              <stddev>5</stddev>
             </noise>
           </vertical>
         </position_sensing>
@@ -141,6 +141,36 @@
       <plugin name="basic_mobile_bot_gps" filename="libgazebo_ros_gps_sensor.so">
         <ros>
           <remapping>~/out:=gps/fix</remapping>
+        </ros>
+      </plugin>
+    </sensor>
+  </link>
+
+
+  <!-- *********************** GPS2 SETUP *********************************   -->
+  <link name="gps2_link">
+    <sensor name="bmb_gps2" type="gps">
+      <always_on>true</always_on>
+      <update_rate>10.0</update_rate>
+      <gps>
+        <position_sensing>
+          <horizontal>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>0</stddev>
+            </noise>
+          </horizontal>
+          <vertical>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>0</stddev>
+            </noise>
+          </vertical>
+        </position_sensing>
+      </gps>
+      <plugin name="basic_mobile_bot_gps2" filename="libgazebo_ros_gps_sensor.so">
+        <ros>
+          <remapping>~/out:=gps2/fix</remapping>
         </ros>
       </plugin>
     </sensor>
@@ -264,7 +294,13 @@
     <parent>base_link</parent>
     <child>gps_link</child>
     <pose>0 0 0 0 0 0</pose>
-  </joint>  
+  </joint>
+
+  <joint name="gps2_joint" type="fixed">
+    <parent>base_link</parent>
+    <child>gps2_link</child>
+    <pose>0 0 0 0 0 0</pose>
+  </joint>
 
  <!-- *********************** WHEEL ODOMETRY ***************************    -->
   <plugin name="basic_mobile_bot_diff_drive" filename="libgazebo_ros_diff_drive.so">

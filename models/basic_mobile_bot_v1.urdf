@@ -182,4 +182,14 @@
 
   <link name="gps_link"/>
 
-</robot>
+  <!-- *********************** GPS2 SETUP **********************************  -->
+  
+  <joint name="gps2_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="gps2_link"/>
+    <origin xyz="0.10 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <link name="gps2_link"/>
+
+</robot> 
